@@ -1,0 +1,25 @@
+drop database if exists littlesister;
+create database littlesister;
+use littlesister;
+CREATE TABLE productos (id_ int(3) AUTO_INCREMENT primary key, marca varchar(100), cantidad int(100), precio float, Descripcion varchar(100),
+Nombre varchar(100),stock int(3));
+
+
+CREATE TABLE usuario (id_usuario int(3) AUTO_INCREMENT primary key, nombre varchar(100), tipo char(1), correo varchar(100), contra varchar(100));
+
+
+CREATE TABLE pedidos (id_pedido int(3) AUTO_INCREMENT
+primary key, cantidad int (2), fechapedido Date , domicilio varchar(350),id_ int(3),id_usuario int(3),
+FOREIGN KEY (id_) REFERENCES productos (id_), FOREIGN KEY (id_usuario) REFERENCES usuario (id_usuario)
+);
+
+INSERT INTO usuario (nombre,tipo,correo,contra) VALUES('alex','2','alex@hotmail.com','123');
+
+INSERT INTO productos (id_,marca,cantidad,precio,Descripcion,Nombre,stock)VALUES
+(1,'barbi',30,1200,'toystory barbie','toystory',50),
+(2,'minilan',20,500,'nenuco rapero','nenuco rapero',60),
+(3,'barbi',50,2000,'nenucos hermanos','carnales',70),
+(4,'monster',20,600,'chiapaneca','patito feo',80),
+(5,'barbi',10,1000,'sonriente halloween','sonriente halloween',90),
+(6,'matel',5,300,'monster high ','doble cabeza',10);
+

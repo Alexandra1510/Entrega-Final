@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/iniciar.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+  <form action="addproductoBd.php" method="post">
+    <label for="fname">Marca</label>
+    <input type="text" id="fname" name="marca" placeholder="La marca..">
+
+    <label for="lname">Cantidad</label>
+    <input type="text" id="lname" name="cantidad" placeholder="Cantidad..">
+
+    <label for="lname">Precio</label>
+    <input type="text" id="lname" name="precio" placeholder="precio">
+
+    <label for="lname">Descripcion</label>
+    <input type="text" id="lname" name="descripcion" placeholder="Descripcion..">
+
+    <label for="lname">Nombre</label>
+    <input type="text" id="lname" name="nombre" placeholder="El nombre..">
+
+    <label for="lname">Stock</label>
+    <input type="text" id="lname" name="stock" placeholder="Stock..">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
